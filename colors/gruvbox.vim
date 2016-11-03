@@ -1221,7 +1221,12 @@ hi! link jsonBraces GruvboxFg1
 hi! link jsonString GruvboxFg1
 
 " }}}
+" Bufstat: {{{
 
+call s:HL('ActiveBuffer', s:fg0, s:bg2, s:bold)
+call s:HL('InactiveBuffer',   s:bg4, s:bg0, s:bold . s:inverse)
+
+" }}}
 
 " Functions -------------------------------------------------------------------
 " Search Highlighting Cursor {{{
